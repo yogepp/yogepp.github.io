@@ -1,0 +1,28 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F2F2F2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.wrap {
+  width: 950px;
+  margin: 25px auto;
+}
+/* navigasi */
+.navigasi ul li {
+  float: right;
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.navigasi ul li a {
+  text-decoration: none;
+  color: #001B26;
+}
+
+.navigasi ul li a:hover {
+  color: #8EA1A5;
+}
