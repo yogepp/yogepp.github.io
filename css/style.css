@@ -41,11 +41,18 @@ header a:hover {
 }
 
 /* Banner */
-.banner {
-  color:#262626;
-}
+
 .banner h1 {
   margin-top: 150px;
+  color:#262626;
+}
+
+.banner p {
+  color: #737373;
+}
+
+.third {
+  margin-top: 10px;
 }
 
 #typed {
@@ -57,7 +64,12 @@ header a:hover {
   width: 30px;
   height: 30px;
   margin: 10px;
-  display: inline;
+  display: inline-block;
+}
+
+.link img:hover {
+  width: 33px;
+  height: 33px;
 }
 
 .link a {
