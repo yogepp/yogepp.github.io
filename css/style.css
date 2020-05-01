@@ -30,6 +30,7 @@ header .active {
 }
 
 header a {
+  font-size: 20px;
   text-decoration: none;
   color:#262626;
 }
@@ -40,12 +41,25 @@ header a:hover {
 }
 
 /* Banner */
+.banner {
+  color:#262626;
+}
+.banner h1 {
+  margin-top: 150px;
+}
 
 #typed {
   text-align: center;
   color:#262626;
 }
 
-.typed-cursor {
-  text-align: center;
+.link img {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  display: inline;
+}
+
+.link a {
+  text-decoration: none;
 }
