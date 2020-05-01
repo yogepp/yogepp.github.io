@@ -7,22 +7,45 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.wrap {
-  width: 950px;
-  margin: 25px auto;
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
 }
-/* navigasi */
-.navigasi ul li {
+
+/* Header */
+header nav {
   float: right;
-  list-style-type: none;
-  padding-left: 20px;
+  margin-top: 10px;
 }
 
-.navigasi ul li a {
+header li {
+  float: left;
+  display: inline;
+  padding: 0 10px 0 10px;
+}
+
+header .active {
+  font-weight: bold;
+}
+
+header a {
   text-decoration: none;
-  color: #001B26;
+  color:#262626;
 }
 
-.navigasi ul li a:hover {
-  color: #8EA1A5;
+header a:hover {
+  color:#A6A6A6;
+  font-weight: bold;
+}
+
+/* Banner */
+
+#typed {
+  text-align: center;
+  color:#262626;
+}
+
+.typed-cursor {
+  text-align: center;
 }
