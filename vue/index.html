@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aplikasi Mata Kuliah</title>
+<style type="text/css">
+	body {
+		font-family: sans-serif;
+	}
+</style>
+</head>
+<body>
+
+<div id="root">
+	<h1>Mata Kuliah</h1>
+	<input v-model="matkulBaru" v-keyup.enter="tambahMatkul"> 
+	<button v-on:click="tambahMatkul">TAMBAH MATKUL</button>
+	<ul>
+		<li v-for="mat in matkul">
+			{{ mat.nama }}
+		</li>
+	</ul>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js">
+	app = new Vue({
+		el: 'root',
+		data: {
+			matkul: [
+				{ nama: '' },
+			]
+		},
+		methods: {
+			tambahMatkul: function() {
+				return this.matkul.push({nama: this.matkulBaru})
+			}
+		}
+
+	})
+</script>
+</body>
+</html>
