@@ -82,12 +82,13 @@ header a:hover {
 .profile {
   margin-top: 25px;
   background-color: black;
-  height: 500px;
+  height: auto;
   color: white;
 }
 
 .profile img {
   margin-top: 75px;
+  margin-bottom: 25px;
   width: 200px;
   border-radius: 100%;
 }
@@ -97,7 +98,8 @@ header a:hover {
 }
 
 .kalimat {
-  margin-top: 125px;
+  margin-top: 80px;
+  margin-bottom: 25px;
 }
 
 .logo {
