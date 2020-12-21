@@ -123,3 +123,17 @@ header a:hover {
   margin-top: 125px;
   margin-bottom: 50px;
 }
+
+.col h3 a {
+    color: black;
+    text-decoration: none;
+}
+
+.col h3 a:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+.gregweb {
+    width: 100%;
+}
