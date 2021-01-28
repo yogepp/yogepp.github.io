@@ -134,6 +134,10 @@ header a:hover {
     text-decoration: none;
 }
 
-.gregweb {
+.portfolio {
+  margin-bottom: 50px;
+}
+
+.gregweb, .wumbeeweb {
     width: 100%;
 }
