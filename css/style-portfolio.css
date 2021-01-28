@@ -138,6 +138,10 @@ header a:hover {
   margin-bottom: 50px;
 }
 
-.gregweb, .wumbeeweb {
+.gregweb {
     width: 100%;
+}
+
+.wumbeeweb {
+  width: 100%;
 }
