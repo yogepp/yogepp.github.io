@@ -7,16 +7,9 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.container {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
-}
-
 /* Header */
 header nav {
   float: right;
-  margin-top: 10px;
 }
 
 header li {
@@ -121,7 +114,55 @@ header a:hover {
   margin-bottom: 40px;
 }
 
+.container {
+  margin-bottom: 50px;
+}
+
 .follow {
   margin-top: 125px;
   margin-bottom: 50px;
+}
+
+.parallax {
+  background-image: url(../img/portfolio.jpg);
+  height: 350px;
+  color: white;
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: center;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.blur {
+  background-color: black;
+  opacity: 0.3;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.portofolio {
+  position: relative;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  right: 0;
+  left: 0;
+  height: 80px;
+}
+
+h6 {
+  padding-top: 25px;
+}
+
+#kontak {
+  margin-bottom: 50px;
+}
+
+.row {
+  margin: 15px;
 }

@@ -8,37 +8,40 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.ico">
 
-    <!-- Custom CSS-->
-    <link rel="stylesheet" href="css/style.css">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+   
+
+    
     <title>Yogepp</title>
   </head>
   <body>
     <!-- Header -->
-  <header>
+  <header class="navbar-nav">
     <div class="container">
-      <nav class="">
+      <nav>
         <ul>
           <li class="active"> <a href="index.html">Home</a> </li>
-          <li> <a href="portfolio.html">Portfolio</a> </li>
-          <li> <a href="contact.html">Contact</a> </li>
+          <li> <a href="#portofolio">Portfolio</a> </li>
+          <li> <a href="#kontak">Contact</a> </li>
         </ul>
       </nav>
     </div>
   </header>
 
   <!-- Banner -->
-  <section class="banner">
+  <div class="banner">
     <div class="container">
       <center>
         <h1>Hi, I am <span id="typed"></span></h1>
         <p class="third">Where focus goes energy flows. Energy makes anything real.</p>
       </center>
     </div>
-  </section>
+  </div>
 
   <!-- profile -->
   <div class="profile">
@@ -89,12 +92,57 @@
       </div>
       <div class="text-center">
         <p class="kontak">
-          My skills are mainly in design skills. If you are interested in a service that I can do, you can contact me by clicking the contact button below.
+          My skills are mainly in design skills. If you are interested in a service that I can do, you can see my portfolio below.
         </p>
-        <button class="button btn btn-dark" onclick="window.location.href='contact.html'">
-          Contact
+      </div>
+  </div>
+
+  <!-- Parallax-->
+  <div class="parallax">
+    <div class="blur"></div>
+    <div class="row h-100">
+      <div class="col-md-12 align-self-center text-center">
+        <h3 class="portofolio" id="portofolio">Portfolio</h3>
+      </div>
+    </div>
+  </div>
+
+  <!--Portfolio -->
+  <div class="container">
+    <div class="row">
+      <a href="https://gregrgraphics.store/" target="_BLANK" data-toggle="lightbox" data-gallery="gallery" class="col text-center">
+        <img src="portfolio/images/1.png" class="img-fluid rounded">
+      </a>
+      <a href="https://wumbeestore.github.io/" target="_BLANK" data-toggle="lightbox" data-gallery="gallery" class="col text-center">
+        <img src="portfolio/images/2.png" class="img-fluid rounded">
+      </a>
+    </div>
+    <div class="row">
+      <a href="https://www.fiverr.com/yogp16" target="_BLANK" data-toggle="lightbox" data-gallery="gallery" class="col text-center">
+        <img src="portfolio/images/3.jpeg" class="img-fluid rounded">
+      </a>
+      <a href="https://www.fiverr.com/yogp16" target="_BLANK" data-toggle="lightbox" data-gallery="gallery" class="col text-center">
+        <img src="portfolio/images/4.jpeg" class="img-fluid rounded">
+      </a>
+    </div>
+  </div>
+  
+  <div class="parallax">
+    <div class="blur"></div>
+    <div class="row h-100">
+    </div>
+  </div>
+
+  <!-- Kontak -->
+  <div class="container text-center">
+    <h3 id="kontak">Contact</h3>
+    <div class="row">
+      <div class="col">
+        <button class="btn btn-dark" onclick="window.location.href='https://wa.me/6281342839796/'">
+          WhatsApp
         </button>
       </div>
+    </div>
   </div>
 
   <!--footer-->
@@ -120,13 +168,22 @@
       <div class="col">
         <div class="link float-left">
           <a href="https://www.youtube.com/channel/UCy8t67lwAcn3rmD7jKJwSZg">
-            <img src="img/yt.png" alt="youtube">
+            <img src="img/yt.png" alt="youtube"> </a>
         </div>
       </div>
     </div>
   </div>
 
+  <footer>
+    <div class="container align-self-center">
+      <h6 class="text-center">
+        Yogepp@2021
+      </h6>
+    </div>
+  </footer>
+
     <!-- Optional JavaScript -->
+    <script src="portfolio/app.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script type="text/javascript">
       var typed = new Typed("#typed", { strings:["Web Designer.", "Graphic Designer.", "Yoga Putra Pratama."],
@@ -140,6 +197,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
+      $(document).on("click", '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+      });
+
       var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
       (function(){
       var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -151,5 +213,6 @@
       })();
     </script>
     <!--End of Tawk.to Script-->
+    
   </body>
 </html>
